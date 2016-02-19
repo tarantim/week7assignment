@@ -1,0 +1,26 @@
+<h1> {{this.heading}} Request Received<h1>
+<br>
+<div id="getData">
+	<h3>Here is what was sent to this server via query</h3>
+
+	<ol>
+	  	{{#each qDataList}}
+	    	<li>{{this.name}}: {{this.value}} </li>
+	  	{{/each}}
+	</ol>
+</div>
+
+<br>
+<br>
+
+
+<div id="putData">
+{{#if bDataList}}
+	<h3>Here is what was sent to this server in the body<h3>
+	<ol>
+		{{#each bDataList}}
+	   		<li>{{this.name}}: {{this.value}} </li>
+		{{/each}}
+	</ol>
+{{/if}}
+</div>
