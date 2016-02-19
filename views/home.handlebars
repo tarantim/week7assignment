@@ -1,6 +1,7 @@
 <h1> {{this.heading}} Request Received<h1>
 <br>
 <div id="getData">
+{{#if qDataList}}
 	<h3>Here is what was sent to this server via query</h3>
 
 	<ol>
@@ -8,6 +9,7 @@
 	    	<li>{{this.name}}: {{this.value}} </li>
 	  	{{/each}}
 	</ol>
+	{{/if}}
 </div>
 
 <br>
